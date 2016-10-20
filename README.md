@@ -7,6 +7,7 @@ Simple Android Acessory that I wrote. It shows you how to use the AOA 2.0 protoc
 You must have libusb-1.0.0 installed.
 
 ```shell
+sudo apt-get install libusb-1.0-0-dev
 gcc -std=gnu99 -o driv android_device.c driver.c `pkg-config --libs --cflags libusb-1.0`
 ```
 
