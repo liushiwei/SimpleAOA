@@ -39,7 +39,7 @@ int main(int argc, char const *argv[])
     }
     else
         printf("Success!\n");
-    if (dev.product_id != ACCESSORY_PID && dev.product_id != ACCESSORY_PID_ADB)
+    if (dev.product_id != ACCESSORY_PID_AUDIO && dev.product_id != ACCESSORY_PID_AUDIO_ADB)
     {
         printf("Attempting to put device in accessory mode...");
         if (!android_device_set_accesory_mode(&dev))

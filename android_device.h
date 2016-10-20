@@ -33,8 +33,10 @@ THE SOFTWARE.
 
 
 #define GOOGLE_VID                      0x18D1
-#define ACCESSORY_PID_ADB               0x2D02
-#define ACCESSORY_PID_ADB               0x2D03
+#define ACCESSORY_PID_AUDIO             0x2D02
+#define ACCESSORY_PID_AUDIO_ADB         0x2D03
+#define ACCESSORY_PID_ACCESSORY_AUDIO   0x2D04
+#define ACCESSORY_PID_ACCESSORY_AUDIO_ADB               0x2D05
 
 #define FIRST_REQUEST_TYPE              0xC0
 #define ANDROID_REQUEST_TYPE            0x40
@@ -42,7 +44,7 @@ THE SOFTWARE.
 #define ACCESSORY_GET_PROTOCOL          51
 #define ACCESSORY_SET_AUDIO_MODE        58
 #define ACCESSORY_START                 53
-#define ACCESSORY_UNREGISTER_HID        54
+#define ACCESSORY_REGISTER_HID        54
 #define ACCESSORY_UNREGISTER_HID        55
 #define ACCESSORY_SET_HID_REPORT_DESC   56
 #define ACCESSORY_SEND_HID_EVENT        57

@@ -98,7 +98,7 @@ bool android_device_set_accesory_mode(android_device *and_dev)
     {
         response = android_device_find_device(and_dev);
         if (response &&
-                (and_dev->product_id == ACCESSORY_PID || and_dev->product_id == ACCESSORY_PID_ADB))
+                (and_dev->product_id == ACCESSORY_PID_AUDIO || and_dev->product_id == ACCESSORY_PID_AUDIO_ADB))
             break;
         if (i == 4)
             return false;
